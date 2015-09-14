@@ -1,6 +1,8 @@
 ---
 title: Setting up a NodeJS server
 date: 2015-09-14T15:04:59+02:00
+layout: post
+categories: git
 ---
 For a project I needed to setup a webserver that was capable of capturing and logging all POST requests.
 
