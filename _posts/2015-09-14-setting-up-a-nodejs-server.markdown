@@ -10,7 +10,7 @@ The idea was to capture all requests and store them all the filesystem.
 
 I ended up writing this little script :
 
-{% highlight javascript %}
+```
 var express = require('express');
 var fs = require('fs');
 var dateFormat = require('dateformat');
@@ -48,6 +48,6 @@ var server = app.listen(8181, function () {
   var port = server.address().port;
   console.log('Server listening at http://%s:%s', host, port);
 });
-{% highlight %}
+```
 
 The script is started using ```forever```, a neat way to run your node program forever. More info on the [forever](https://github.com/foreverjs/forever) website.
