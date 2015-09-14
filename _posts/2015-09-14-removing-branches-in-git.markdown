@@ -9,6 +9,7 @@ In that case you want to remove both the local branch and the remote branch.
 
 This can be done using the following commands :
 
+First look at the current set of branches
 {% highlight bash %}
 git branch -a
   gh_pages
