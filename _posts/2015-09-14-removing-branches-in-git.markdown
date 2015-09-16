@@ -3,6 +3,7 @@ title: Removing branches in GIT
 date: 2015-09-14T14:07:14+02:00
 layout: post
 categories: git
+tags: [git, branches, scm]
 ---
 When you're properly merging all your branches your repository can end up with a lot of branches that aren't being used anymore.
 In that case you want to remove both the local branch and the remote branch.

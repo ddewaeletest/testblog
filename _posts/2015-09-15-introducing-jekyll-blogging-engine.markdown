@@ -2,7 +2,8 @@
 title: Introducing Jekyll Blogging Engine
 date: 2015-09-15T21:08:45+02:00
 layout: post
-categories: jekyll blogging
+categories: [jekyll, blogging]
+tags: [github, github-pages, jekyll, blogging]
 ---
 In this post we'll be discussing Jekyll, a popular blog engine that is very powerfull and easy to use.
 
@@ -10,14 +11,18 @@ In this post we'll be discussing Jekyll, a popular blog engine that is very powe
 
 You need to install Jekyll through a ```gem```
 
-	gem install jekyll
+{% highlight bash %}
+gem install jekyll
+{% endhighlight %}
 
 ## Creating a blog
 
-Creating a blog is as simple 
+Creating a blog is as simple executing the following command:
 
-	jekyll new myblog
-	
+{% highlight bash %}
+jekyll new myblog
+{% endhighlight %}
+
 This will create the folder structure and files needed to setup the blog.
 Consider this the source code for your blog. By building it, you can generate the necessary static content so that it can be hosted as your blog.
 
@@ -91,38 +96,52 @@ by default an excerpt is the first paragraph of the post, but you can [customize
 
 In this section we'll go over deploying your blog to Github pages.
 
-As can we seen in the screenshot below, a jekyll blog can be hosted by Github very easily :
-
-![Git gh-pages]({{ site.url }}/assets/git-gh-pages.png)
-
-
 There are 2 kinds of GitHub pages
 
 - Project pages
 - User pages
 
+We'll first go over ```project pages```.
+
 In order to publish to a project page we need to do the following steps :
 
-Create a new gh-pages branch
-Put your jekyll code-base on the gh-pages branch
-push it to github
+- Create a new gh-pages branch
+- Put your jekyll code-base on the gh-pages branch
+- push it to github
 
+As can be seen in the screenshot below, a jekyll blog can be hosted by Github very easily :
+
+![Git gh-pages]({{ site.url }}/assets/git-gh-pages.png)
+
+All it takes is to upload all of your jekyll pages to a special ```gh-pages``` branch and Github will take care of the rest.
 
 
 	gem install github-pages
 
 
+## Themes
 
 We can easily customize the look and feel of our site by configuring templates.
 
-The [Solar theme for Jekyll](http://mattvh.github.io/solar-theme-jekyll/) is a nice-looking theme.
+The [Solar theme for Jekyll](http://mattvh.github.io/solar-theme-jekyll/) is a nice-looking theme so let's thake a look at howto install it.
+
+We can clone the entire repo and start a new blog, but to apply this theme to an existing blog you'll need to copy the following files and folders:
+
+{% highlight bash %}
+cp -r ../solar-theme-jekyll/_layouts/* _layouts/
+cp -r ../solar-theme-jekyll/index.html index.html 
+cp -r ../solar-theme-jekyll/feed.xml feed.xml 
+cp -r ../solar-theme-jekyll/assets/* assets/
+{% endhighlight %}
 
 
-Some functionalities we want to cover
+
+
 
 
 ## References
 
+- [Great Jekyll introduction](http://jekyllbootstrap.com/lessons/jekyll-introduction.html)
 - https://github.com/octopress/genesis-theme
 - https://github.com/imathis/octopress/wiki/3rd-party-plugins
 - https://www.justinrummel.com/migrating-from-octopress-2-to-octopress-3/
@@ -131,5 +150,6 @@ Some functionalities we want to cover
 - https://help.github.com/articles/using-jekyll-with-pages/
 - https://help.github.com/articles/creating-project-pages-manually/
 - https://24ways.org/2013/get-started-with-github-pages/
-
+- http://mattvh.github.io/solar-theme-jekyll/
+- https://github.com/mattvh/solar-theme-jekyll
 
