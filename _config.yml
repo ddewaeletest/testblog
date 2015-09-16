@@ -9,6 +9,6 @@ baseurl: /testblog # the subpath of your site, e.g. /blog/
 url: "http://ddewaeletest.github.io/testblog" # the base hostname & protocol for your site
 twitter_username: ddewaele
 github_username:  ddewaele
-
+paginate: 10
 # Build settings
 markdown: kramdown

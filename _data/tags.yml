@@ -1,0 +1,29 @@
+- slug: blogging
+  name: blogging
+
+- slug: git
+  name: git
+
+- slug: branches
+  name: branches
+
+- slug: scm
+  name: scm
+
+- slug: nodejs
+  name: nodejs
+
+- slug: webserver
+  name: webserver
+
+- slug: github
+  name: GitHub
+
+- slug: github-pages
+  name: GitHub Pages
+
+- slug: jekyll
+  name: Jekyll
+  
+- slug: open-source
+  name: Open Source
