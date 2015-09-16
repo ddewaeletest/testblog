@@ -23,7 +23,7 @@ jekyll new privateblog
 cd privateblog/
 git init
 git commit -m "Initial commit" -a
-{% highlight %}
+{% endhighlight %}
 
 Setup 2 remotes: 
 
