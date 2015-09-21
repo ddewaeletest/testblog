@@ -133,8 +133,11 @@ ruby 1.9.3p551 (2014-11-13 revision 48407) [x86_64-linux]
 
 ## Pushing your changes
 
+When you push your changes to the remote deploy server, git commit post hook will kick in and you'll be able to see the output as jekyll is building your site in the designated folder
+
 {% highlight bash %}
 git push deploy master
+
 
 Counting objects: 23, done.
 Delta compression using up to 8 threads.
@@ -154,6 +157,8 @@ To deployer@deploy.server:~/myrepo.git
 
 
 ## Setup Apache
+
+One final thing to do is to ensure that your webserver (Apache in this case) serves up your blog.
 
 {% highlight xml %}
 <VirtualHost *:80>
