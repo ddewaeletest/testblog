@@ -4,8 +4,8 @@ date: 2015-09-21T17:52:58+02:00
 layout: post
 categories: [iot, mqtt]
 tags: [iot,mqtt,mosquitto]
-
 ---
+The popular mosquitto webbrowser has been supporting websockets for a while now, but most distributions don't have it enabled by default. At the moment, the only way to have full websocket support in the browser is if you build mosquitto from the sources. This post will cover the steps needed in order to have full websocket in mosquitto.
 
 ## Prerequisites
 

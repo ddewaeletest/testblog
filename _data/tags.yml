@@ -24,6 +24,16 @@
 
 - slug: jekyll
   name: Jekyll
-  
+
 - slug: open-source
   name: Open Source
+
+- slug: iot
+  name: IoT
+
+- slug: mqtt
+  name: MQTT
+
+- slug: websockets
+  name: WebSockets
+
